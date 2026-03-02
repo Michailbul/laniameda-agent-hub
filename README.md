@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agent Hub — Landing Page
 
-## Getting Started
+> Marketing site for [Agent Hub](https://github.com/Michailbul/agent-hub) — the self-hosted editor for AI agent workspaces.
 
-First, run the development server:
+**This repo:** `Michailbul/laniameda-agent-hub` — the landing page (owned by Laniameda)  
+**The app:** `Michailbul/agent-hub` — the open source product itself
+
+---
+
+## Two repos, two purposes
+
+| | This repo | App repo |
+|---|---|---|
+| **What** | Marketing website | The product |
+| **Repo** | `laniameda-agent-hub` | `agent-hub` |
+| **Owner** | Laniameda (brand) | Open source / community |
+| **License** | All rights reserved | MIT |
+| **Contributions** | Internal only | Open to PRs |
+| **Deploy** | Vercel (vercel.json) | Self-hosted / Docker |
+| **Stack** | Next.js + Tailwind + Framer Motion | Node.js + Express + vanilla JS |
+
+---
+
+## Stack
+
+- **Next.js 14** App Router + TypeScript
+- **Tailwind CSS v4** with custom design tokens
+- **Framer Motion** — scroll animations, micro-interactions
+- **Radix UI** — Accordion, Tabs (unstyled primitives)
+- **Lucide React** — icons
+- **next/font** — Inter + JetBrains Mono
+
+## Design system
+
+Code brutalism on the Laniameda warm palette:
+- Warm paper background: `#fffaf5`
+- Coral accent: `#ff7a64`
+- Hard offset shadows: `4px 4px 0 #201710` — no blur
+- Hover lift: `translate(-2px, -2px)` + shadow grows
+- Inter 800/900 for headlines · JetBrains Mono for all labels + code
+
+---
+
+## Getting started
 
 ```bash
+git clone https://github.com/Michailbul/laniameda-agent-hub
+cd laniameda-agent-hub
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Route | Description |
+|---|---|
+| `/` | Variant selector — internal design review |
+| `/v1` | Minimal Terminal — dense, CLI-forward |
+| `/v2` | Editorial Bold — 96px headline, magazine rhythm |
+| `/v3` | Dashboard Preview — CSS editor mock as hero |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Once a direction is chosen, the winning variant becomes the root `/` and others are removed.
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build   # static export
+vercel deploy   # or push to main → auto-deploy via Vercel
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Related
 
-## Deploy on Vercel
+- **[agent-hub](https://github.com/Michailbul/agent-hub)** — the open source app this page markets
+- **Live demo** — https://agent-hub.srv1439489.hstgr.cloud
+- **Install** — `npx @laniameda/agent-hub`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Built by [Laniameda](https://laniameda.gallery)*
