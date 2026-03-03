@@ -167,3 +167,104 @@ Additional angles to test:
 - Source video (agent architecture that sparked this framing): https://www.youtube.com/watch?v=ISb0nrlNoKQ
 - Studio positioning doc: `~/.openclaw/workspace/studio-positioning.md`
 - Session notes: `~/.openclaw/workspace/memory/2026-03-03.md`
+
+---
+
+## UPDATE — 2026-03-03 (afternoon sprint)
+
+### The three lego paradigms — add to landing page
+
+This framing came out of a product session and should be the core structural metaphor on the landing page and in all copy. Use this verbatim or close to it:
+
+> **Three building blocks. One system.**
+>
+> **Skills** — reusable capabilities you drop onto any agent. Like npm packages for your team.
+>
+> **Agents** — your team members. Each has their own skill set, personality, and context.
+>
+> **Context & Files** — the instructions, memory, and PM files that shape how each agent thinks and acts.
+
+Everything in Agent Hub maps to one of these three paradigms. This is the mental model users need to learn once, then everything makes sense.
+
+---
+
+### The three views — connect to paradigms in copy
+
+| View | Paradigm it serves | What you do |
+|---|---|---|
+| **Files** | Context & Files | Edit who an agent is and what they know |
+| **Crons** | Automation | Schedule what runs automatically |
+| **Canvas** *(coming)* | Agents + Skills | See and shape the whole team visually |
+
+Use this in the features section. Each view card should show its paradigm label.
+
+---
+
+### The Canvas — headline feature copy
+
+The Canvas view is the defining product feature. Lead with this:
+
+> **Lists are for managing. A canvas is for thinking.**
+>
+> You can't understand a team in a spreadsheet. On the Canvas, you see every agent as a card — who they are, what skills they carry, what context they share. Drag a skill onto an agent. Connect shared context. Add a new agent in one click.
+>
+> Your agent org chart, alive and editable.
+
+---
+
+### The product pitch — one line
+
+**"Cursor is for developers. Agent Hub is for founders running agent teams."**
+
+Use this as:
+- A subheadline on the hero section
+- The pull quote in the "who it's for" section
+- The first line of every social post about the product
+
+---
+
+### The target user — sharpen
+
+The user is a **solo founder or independent creator who manages 10 agents instead of 10 people.** They're making the same strategic orchestration decisions a manager makes — but for an AI team:
+
+- Which agent owns which domain?
+- What skills does each agent need?
+- What shared context does the whole team need to know?
+- How do I onboard a new agent without it going off-script?
+
+These are not technical questions. They're management questions. Agent Hub is the management interface.
+
+---
+
+### Positioning update: problem frame for the landing page hero
+
+**Old frame** (keep for developers): "Your context is scattered. Your skills are chaos."
+
+**New frame** (lead with this): 
+
+> You're running an AI team.
+> You just don't have a way to manage it yet.
+
+This lands harder for the expanded ICP (agencies, studios, creators, solo founders). It names the new reality (running an AI team) before proposing the solution.
+
+---
+
+### The product comparison that positions this
+
+Use a simple "before/after" or "vs" on the page:
+
+| Without Agent Hub | With Agent Hub |
+|---|---|
+| Telegram + terminal = black box | Every change visible in real time |
+| Edit files one by one via SSH | Visual canvas — see the whole team |
+| Context scattered across machines | One place, one source of truth |
+| New agent = days of manual setup | One click to scaffold a new agent |
+| Skills installed by hand, path by path | Drag-and-drop skill assignment |
+
+---
+
+### Designer notes
+
+- The Canvas view (v0.4) should be mocked up on the landing page even before it ships. Show the agent cards with skill pills, connecting lines for shared context. Make it aspirational.
+- The three paradigms (Skills / Agents / Context) should have visual icons or cards — not a table. Think icon + label + one-line description.
+- Keep the brutalist / editorial aesthetic. Warm paper, coral, near-black, JetBrains Mono. This is a tool that takes itself seriously, designed for people who take their agent ops seriously.
